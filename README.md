@@ -16,7 +16,15 @@ Spiritually inspired by [BoltDB](https://github.com/boltdb/bolt) and [bbolt](htt
 ## Installation
 
 ```sh
-jpm install jbolt
+jpm install https://github.com/AxelRHD/jbolt.git
+```
+
+Or add it as a dependency in your `project.janet`:
+
+```janet
+(declare-project
+  :name "my-app"
+  :dependencies ["https://github.com/AxelRHD/jbolt.git"])
 ```
 
 No system dependencies required. LMDB is vendored and compiled together with the native module. A C compiler is all you need.
